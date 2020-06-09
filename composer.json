@@ -1,0 +1,30 @@
+{
+    "name": "churakovmike/identicon",
+    "type": "library",
+    "description": "Fast identicon generator",
+    "keywords": [
+        "identicon",
+        "identicon generator",
+        "php identicon"
+    ],
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Churakov Mike",
+            "email": "churakovmike@mail.ru",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ChurakovMike\\Identicon\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
