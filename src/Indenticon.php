@@ -2,6 +2,7 @@
 
 namespace ChurakovMike\Identicon;
 
+use ChurakovMike\Identicon\Generators\ImageGenerator;
 use ChurakovMike\Identicon\Interfaces\GeneratorInterface;
 
 /**
@@ -24,7 +25,7 @@ class Identicon
      */
     public function __construct(GeneratorInterface $generator = null)
     {
-        $this->generator = $generator;
+        $this->generator = $generator ?? new ImageGenerator();
     }
 
     /**
@@ -38,7 +39,7 @@ class Identicon
     /**
      * {@inheritDoc}
      */
-    public function generate() {}
-
-
+    public function generate() {
+        return $this->generator->generate();
+    }
 }
